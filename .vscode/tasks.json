@@ -1,0 +1,15 @@
+{
+    "version":"2.0.0",
+    "tasks": [
+        {
+            "label": "Iniciar React automaticamente",
+            "type": "shell",
+            "command": "cd frontend; cd react; npm run dev ",
+            "problemMatcher": [],
+            "isBackground": true,
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
