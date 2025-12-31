@@ -1,6 +1,8 @@
 import "../components/navbar.css";
-import { CgShoppingCart } from "react-icons/cg";
-import { FiSearch, FiUser, FiHeart, FiPieChart } from "react-icons/fi";
+import "../components/button.jsx";
+import { FiSearch, FiUser, FiHeart, FiPieChart,FiShoppingCart } from "react-icons/fi";
+import Button from "../components/button.jsx";
+
 
 // Navbar
 export default function navbar() {
@@ -8,47 +10,52 @@ export default function navbar() {
     <header className="navbar">
       <div className="nav-inner">
         {/* Logo / Marca */}
-        <a className="brand" href="#">
+       
+        <Button to="/" className="button">
+        <a className="brand">
           CLALUSPORT
         </a>
+        </Button>
         <nav className="Navegacion principal">
           <ul className="menu">
             <li>
-              <a href="#">Ver todo</a>
+              <a >Ver todo</a>
             </li>
             <li>
-              <a href="#">Nuevos</a>
+              <a >Nuevos</a>
             </li>
             <li>
-              <a href="#">Superiores</a>
+              <a >Superiores</a>
             </li>
             <li>
-              <a href="#">Inferiores</a>
+              <a >Inferiores</a>
             </li>
             <li>
-              <a href="#">Enterizos</a>
+              <a >Enterizos</a>
             </li>
             <li>
-              <a href="#">Sets</a>
+              <a >Sets</a>
             </li>
             <li>
-              <a href="#">Bono regalo</a>
+              <a >Bono regalo</a>
             </li>
           </ul>
         </nav>
 
         <div className="actions">
-          <a href="#" className="icon-btn" aria-label="Buscar">
+          <a  className="icon-btn" aria-label="Buscar">
             <FiSearch />
           </a>
-          <a href="#" className="icon-btn" aria-label="Usuario">
+          <a  className="icon-btn" aria-label="Usuario">
             <FiUser />
           </a>
-          <a href="#" className="icon-btn" aria-label="Favoritos">
+          <a  className="icon-btn" aria-label="Favoritos">
             <FiHeart />
           </a>
-          <a href="#" className="icon-btn cart" aria-label="Carrito">
-            <CgShoppingCart />
+          <a  className="icon-btn cart" aria-label="Carrito">
+            <Button to="/cart" className="button">
+              <FiShoppingCart className="icon-btn"/>
+            </Button>
             <span className="badge" aria-label="Productos en carrito">
               1
             </span>

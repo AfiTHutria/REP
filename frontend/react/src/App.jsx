@@ -1,16 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Homepage from '../src/presentation/pages/homepage.jsx'
-import {Routes,Route} from "react-router-dom"
+import "./App.css";
+import Homepage from "./presentation/pages/homepage.jsx";
+import CartPage from "./presentation/pages/CartPage.jsx";
+import AppRoutes from "./routes/AppRoutes.jsx";
 
-export default function App(){
-  return(
-    <div>
-      <Homepage />
-    </div>
-   
-  );
-  
+export default function App() {
+  return <AppRoutes />;
 }

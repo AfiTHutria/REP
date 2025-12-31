@@ -16,6 +16,7 @@
   z-index: 1000;
   background: var(--nav-bg);
   border-bottom: 1px solid var(--border);
+  border : none;
 }
 
 .nav-inner {
@@ -35,6 +36,13 @@
   color: var(--brand);
   text-decoration: none;
   white-space: nowrap;
+  font-family: 'courier new',comic sans-serif,cursive;
+}
+.button{
+  background-color: var(--nav-bg);
+  cursor: pointer;
+  border: none;
+  display: inline;
 }
 
 .menu {
@@ -77,8 +85,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 20px;
+  height: 20px;
   color: var(--nav-fg);
   text-decoration: none;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -90,13 +98,10 @@
   transform: translateY(-1px);
 }
 
-.cart {
-  font-size: 22px;
-}
 .badge {
   position: absolute;
-  top: -4px;
-  right: 2px;
+  top: -10px;
+  right: -14px;
   background: #ff3b30;
   color: #fff;
   border-radius: 999px;
